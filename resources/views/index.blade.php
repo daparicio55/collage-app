@@ -1,7 +1,7 @@
 <?php
 
 $page = $_GET['p'] ?? 'home';
-$valid = ['home','nosotros', 'plana docente','matriculas','programas','contacto'];
+$valid = ['home','nosotros', 'personal','matriculas','programas','contacto'];
 if (!in_array($page, $valid)) $page = 'home';
 $sub = $_GET['s'] ?? 'quienes';                 // subsección de Nosotros (por defecto: Quiénes somos)
 $valid_sub = ['quienes','mision','vision','valores'];
@@ -21,7 +21,7 @@ function subactive($slug,$cur){ return $slug===$cur ? ' style="font-weight:700;o
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?= htmlspecialchars($marca['nombre']) ?> — <?= $page==='home'?'Inicio':ucfirst($page) ?></title>
-<meta name="description" content="I.E.I 379 Mundo Mágico: Programas, Matrículas y Contacto.">
+<meta name="description" content="I.E.I 020: Programas, Matrículas y Contacto.">
 <link rel="stylesheet" href="{{ asset('recursos/css/main.css') }}">
 </head>
 <body>
@@ -30,7 +30,11 @@ function subactive($slug,$cur){ return $slug===$cur ? ' style="font-weight:700;o
     <a class="brand" href="?"><img src="<?= $marca['logo'] ?>" alt="Logo <?= htmlspecialchars($marca['nombre']) ?>"><span class="brand-title"><?= htmlspecialchars($marca['nombre']) ?></span></a>
     <button class="menu-btn" onclick="JMM.toggleMenu()">☰</button>
     <nav id="mainNav" class="nav">
-      <a href="?"<?= active('home') ?>>Inicio</a>
+      <a href="{{ url('/') }}"
+     class="btn-home {{ request()->is('/') ? 'active' : '' }}"
+     aria-label="Inicio">
+     <img src="{{ asset('recursos/Inicio.png') }}" alt="Inicio" width="30" height="30">
+  </a>
 <div class="has-sub">
   <a href="?p=nosotros"<?= active('nosotros') ?>>Nosotros ▾</a>
   <div class="sub">
@@ -38,15 +42,15 @@ function subactive($slug,$cur){ return $slug===$cur ? ' style="font-weight:700;o
     <a href="?p=nosotros&s=mision"  <?= subactive('mision',  $sub) ?>>Misión</a>
     <a href="?p=nosotros&s=vision"  <?= subactive('vision',  $sub) ?>>Visión</a>
     <a href="?p=nosotros&s=valores" <?= subactive('valores', $sub) ?>>Valores</a>
+    <a href="?p=nosotros&s=valores" <?= subactive('valores', $sub) ?>>Valores</a>
   </div>
 </div>
 
 
   <div class="has-sub">
-    <a href="?p=niveles"<?= active('niveles') ?>>Plana Docente ▾</a>
+    <a href="?p=personal"<?=active('personal')?>>Personal</a>
     <div class="sub">
       <a href="?p=niveles&n=inicial"  <?= subactive('inicial',  $niv) ?>>Educación Inicial</a>
-      <a href="?p=niveles&n=primaria" <?= subactive('primaria', $niv) ?>>Educación Primaria</a>
     </div>
   </div>
 
@@ -82,7 +86,7 @@ function subactive($slug,$cur){ return $slug===$cur ? ' style="font-weight:700;o
 
       <section class="slider" aria-roledescription="carrusel">
         <?php foreach($slides as $k=>$s): ?>
-          <article class="slide" data-slide="<?= $k ?>" style="display:<?= $k===0?'block':'none' ?>;background-image:url('<?= $s['img'] ?>')">
+          <article class="slide" data-slide="<?= $k ?>" style="display:<?= $k===0?'block':'none' ?>;background-image:url('<?= $s[''] ?>')">
             <div class="txt">
               <h2><?= htmlspecialchars($s['h2']) ?></h2>
               <p><?= htmlspecialchars($s['p']) ?></p>
@@ -181,7 +185,7 @@ $nos_cards = [
         <aside>
           <h4>Educación Inicial y Primaria</h4>
           <div style="display:grid;gap:8px">
-            <div>📍 <strong>AA.HH. 16 de Octubre</strong> — Chachapoyas</div>
+            <div>📍 <strong>Jr. Amazonas</strong> — Chachapoyas</div>
             <div>☎️ <strong>(041) 000000</strong></div>
             <div>🕘 Lun–Vie 8:00–1:00</div>
           </div>

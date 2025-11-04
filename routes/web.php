@@ -13,8 +13,6 @@ Route::get('/matriculas',[HomeController::class,'matriculas'])
 Route::get('/matriculas/inicial',[HomeController::class,'matriculas_inicial'])
 ->name('home.matriculas.inicial');
 
-
-
 Route::get('/test', function () {
   $marca = [
     'nombre'  => 'I.E. 379 Mundo Mágico',
@@ -58,8 +56,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-
-
 Route::get('/dashboard/actividades/create/',[ActividadeController::class,'create'])
 ->name('dashboard.actividades.create')
 ->middleware('auth');
@@ -79,3 +75,28 @@ Route::get('/dashboard/actividades/{actividade}/edit',[ActividadeController::cla
 Route::put('/dashboard/actividades/{actividade}',[ActividadeController::class,'update'])
 ->name('dashboard.actividades.update')
 ->middleware('auth');
+
+Route::get('/personal', [HomeController::class, 'personal'])->name('personal.index');
+Route::get('/secciones',[HomeController::class,'secciones'])
+->name('secciones.index');
+
+use App\Http\Controllers\CronogramaController;
+
+Route::get('/cronograma', [CronogramaController::class, 'index'])->name('cronograma');
+
+// API simple para refrescar sin recargar
+Route::get('/api/actividades/fechas', [CronogramaController::class, 'fechasPorAnio']);
+Route::get('/api/actividades/dia',    [CronogramaController::class, 'actividadesPorDia']);
+// ...las otras rutas
+Route::get('/api/actividades/rango', [\App\Http\Controllers\CronogramaController::class, 'fechasRango']);
+route::get('/api/actividades/mes',   [\App\Http\Controllers\CronogramaController::class, 'fechasPorMes']);
+
+// /nosotros  → muestra "Quiénes somos"
+Route::get('/nosotros', [HomeController::class, 'nosotros'])
+    ->name('nosotros.index');
+
+// /nosotros/mision, /nosotros/vision, etc.
+Route::get('/nosotros/{tab}', [HomeController::class, 'nosotros'])
+    ->name('nosotros.tab');
+
+
