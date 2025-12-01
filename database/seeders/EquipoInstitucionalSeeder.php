@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\EquipoInstitucional;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class EquipoInstitucionalSeeder extends Seeder
 {
@@ -12,9 +12,7 @@ class EquipoInstitucionalSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('equipo_institucional')->truncate();
-
-        DB::table('equipo_institucional')->insert([
+        $equipo = [
             [
                 'nombre' => 'Jovita Zumaeta Rojas',
                 'cargo' => 'Directivo',
@@ -95,6 +93,10 @@ class EquipoInstitucionalSeeder extends Seeder
                 'telefono' => '987111000',
                 'seccion' => null,
             ],
-        ]);
+        ];
+
+        foreach ($equipo as $miembro) {
+            EquipoInstitucional::create($miembro);
+        }
     }
 }

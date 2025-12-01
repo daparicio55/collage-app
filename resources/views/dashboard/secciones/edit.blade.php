@@ -22,12 +22,12 @@
                 @csrf
                 @method('PUT')
                 <div class="mb-3">
-                    <label for="nivel" class="form-label">Nivel</label>
-                    <input name="nivel" id="nivel" class="form-control" value="{{ old('nivel', $seccione->nivel) }}" required />
-                </div>
-                <div class="mb-3">
                     <label for="grado" class="form-label">Grado</label>
-                    <input name="grado" id="grado" class="form-control" value="{{ old('grado', $seccione->grado) }}" required />
+                    <select name="grado" id="grado" class="form-select" required>
+                        <option value="3 años" @if(old('grado', $seccione->grado) == '3 años') selected @endif>3 años</option>
+                        <option value="4 años" @if(old('grado', $seccione->grado) == '4 años') selected @endif>4 años</option>
+                        <option value="5 años" @if(old('grado', $seccione->grado) == '5 años') selected @endif>5 años</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="seccion" class="form-label">Sección</label>
@@ -37,7 +37,15 @@
                     <label for="vacantes" class="form-label">Vacantes</label>
                     <input name="vacantes" id="vacantes" type="number" class="form-control" value="{{ old('vacantes', $seccione->vacantes) }}" required />
                 </div>
-
+                <div class="mb-3">
+                    <label for="docente" class="form-label">Docente</label>
+                    <select name="docente_id" id="docente" class="form-select" required>
+                        <option value="">Seleccionar docente</option>
+                        @foreach($docentes as $docente)
+                            <option value="{{ $docente->id }}" @if(old('docente_id', $seccione->docente_id) == $docente->id) selected @endif>{{ $docente->nombre }}</option>
+                        @endforeach
+                    </select>
+                </div>
                 <div class="d-flex justify-content-end gap-2">
                     <a href="{{ route('dashboard.secciones.index') }}" class="btn btn-secondary">Cancelar</a>
                     <button type="submit" class="btn btn-primary">Actualizar Sección</button>

@@ -16,11 +16,11 @@ return new class extends Migration
 
         // Insertar los datos correspondientes al nivel "Inicial"
         DB::table('secciones')->insert([
-            ['nivel' => 'Inicial', 'grado' => '3 años', 'seccion' => 'Amorosos', 'vacantes' => 20],
-            ['nivel' => 'Inicial', 'grado' => '3 años', 'seccion' => 'Divertidos', 'vacantes' => 20],
-            ['nivel' => 'Inicial', 'grado' => '4 años', 'seccion' => 'Creativos', 'vacantes' => 20],
-            ['nivel' => 'Inicial', 'grado' => '5 años', 'seccion' => 'Solidarios', 'vacantes' => 20],
-            ['nivel' => 'Inicial', 'grado' => '5 años', 'seccion' => 'Cariñosos', 'vacantes' => 20],
+            ['grado' => '3 años', 'seccion' => 'Amorosos', 'vacantes' => 20],
+            ['grado' => '3 años', 'seccion' => 'Divertidos', 'vacantes' => 20],
+            ['grado' => '4 años', 'seccion' => 'Creativos', 'vacantes' => 20],
+            ['grado' => '5 años', 'seccion' => 'Solidarios', 'vacantes' => 20],
+            ['grado' => '5 años', 'seccion' => 'Cariñosos', 'vacantes' => 20],
         ]);
     }
 

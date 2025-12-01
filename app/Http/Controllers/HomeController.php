@@ -17,46 +17,96 @@ class HomeController extends Controller
   {
     return collect([
       (object)[ // Directivo
-        'nombre' => 'Jovita', 'apellido' => 'Zumaeta Rojas', 'telefono' => '987654321',
-        'seccion' => '', 'cargo' => 'Directivo', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'jovita.zumaeta@iei020.edu.pe'
+        'nombre' => 'Jovita',
+        'apellido' => 'Zumaeta Rojas',
+        'telefono' => '987654321',
+        'seccion' => '',
+        'cargo' => 'Directivo',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'jovita.zumaeta@iei020.edu.pe'
       ],
       (object)[ // Docentes
-        'nombre' => 'Luis Fernando', 'apellido' => 'Gómez', 'telefono' => '987654321',
-        'seccion' => 'A', 'cargo' => 'Docente', 'foto_url' => 'recursos/img/fotom.png', 'email' => 'luis.gomez@iei020.edu.pe'
+        'nombre' => 'Luis Fernando',
+        'apellido' => 'Gómez',
+        'telefono' => '987654321',
+        'seccion' => 'A',
+        'cargo' => 'Docente',
+        'foto_url' => 'recursos/img/fotom.png',
+        'email' => 'luis.gomez@iei020.edu.pe'
       ],
       (object)[
-        'nombre' => 'Carla', 'apellido' => 'Rodríguez', 'telefono' => '987654321',
-        'seccion' => 'A', 'cargo' => 'Docente', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'carla.rodriguez@iei020.edu.pe'
+        'nombre' => 'Carla',
+        'apellido' => 'Rodríguez',
+        'telefono' => '987654321',
+        'seccion' => 'A',
+        'cargo' => 'Docente',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'carla.rodriguez@iei020.edu.pe'
       ],
       (object)[
-        'nombre' => 'Carlos', 'apellido' => 'Perez', 'telefono' => '987654321',
-        'seccion' => 'B', 'cargo' => 'Docente', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'carlos.perez@iei020.edu.pe'
+        'nombre' => 'Carlos',
+        'apellido' => 'Perez',
+        'telefono' => '987654321',
+        'seccion' => 'B',
+        'cargo' => 'Docente',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'carlos.perez@iei020.edu.pe'
       ],
       (object)[
-        'nombre' => 'Pedro', 'apellido' => 'Lopez', 'telefono' => '987654321',
-        'seccion' => 'B', 'cargo' => 'Docente', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'pedro.lopez@iei020.edu.pe'
+        'nombre' => 'Pedro',
+        'apellido' => 'Lopez',
+        'telefono' => '987654321',
+        'seccion' => 'B',
+        'cargo' => 'Docente',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'pedro.lopez@iei020.edu.pe'
       ],
       (object)[
-        'nombre' => 'Ana María', 'apellido' => 'Santos', 'telefono' => '987222333',
-        'seccion' => 'C', 'cargo' => 'Docente', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'ana.santos@iei020.edu.pe'
+        'nombre' => 'Ana María',
+        'apellido' => 'Santos',
+        'telefono' => '987222333',
+        'seccion' => 'C',
+        'cargo' => 'Docente',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'ana.santos@iei020.edu.pe'
       ],
       // Auxiliares
       (object)[
-        'nombre' => 'Marta', 'apellido' => 'Pérez', 'telefono' => '987444555',
-        'seccion' => '', 'cargo' => 'Auxiliar de educación', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'marta.perez@iei020.edu.pe'
+        'nombre' => 'Marta',
+        'apellido' => 'Pérez',
+        'telefono' => '987444555',
+        'seccion' => '',
+        'cargo' => 'Auxiliar de educación',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'marta.perez@iei020.edu.pe'
       ],
       (object)[
-        'nombre' => 'Luisa', 'apellido' => 'Ramos', 'telefono' => '987666777',
-        'seccion' => '', 'cargo' => 'Auxiliar de educación', 'foto_url' => 'recursos/img/fotom.png', 'email' => 'luisa.ramos@iei020.edu.pe'
+        'nombre' => 'Luisa',
+        'apellido' => 'Ramos',
+        'telefono' => '987666777',
+        'seccion' => '',
+        'cargo' => 'Auxiliar de educación',
+        'foto_url' => 'recursos/img/fotom.png',
+        'email' => 'luisa.ramos@iei020.edu.pe'
       ],
       // Administrativos
       (object)[
-        'nombre' => 'Rosa', 'apellido' => 'Lopez', 'telefono' => '987999000',
-        'seccion' => '', 'cargo' => 'Administrativo', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'rosa.lopez@iei020.edu.pe'
+        'nombre' => 'Rosa',
+        'apellido' => 'Lopez',
+        'telefono' => '987999000',
+        'seccion' => '',
+        'cargo' => 'Administrativo',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'rosa.lopez@iei020.edu.pe'
       ],
       (object)[
-        'nombre' => 'Miguel', 'apellido' => 'Castillo', 'telefono' => '987111000',
-        'seccion' => '', 'cargo' => 'Administrativo', 'foto_url' => 'recursos/img/foto.webp', 'email' => 'miguel.castillo@iei020.edu.pe'
+        'nombre' => 'Miguel',
+        'apellido' => 'Castillo',
+        'telefono' => '987111000',
+        'seccion' => '',
+        'cargo' => 'Administrativo',
+        'foto_url' => 'recursos/img/foto.webp',
+        'email' => 'miguel.castillo@iei020.edu.pe'
       ],
     ]);
   }
@@ -115,58 +165,58 @@ class HomeController extends Controller
     ];
   }
 
-    public function personal()
-    {
-        $marca = $this->getMarca();
+  public function personal()
+  {
+    $marca = $this->getMarca();
 
-        // Leer datos del equipo institucional desde la base de datos
-        $personal = \App\Models\EquipoInstitucional::all()->map(function ($d) {
-            $seccion = \App\Models\Seccione::where('seccion', $d->seccion)->first();
-            return [
-                'id' => $d->id, // Agregar ID para edición
-                'nombres' => $d->nombre, // Cambiar 'nombre' a 'nombres'
-                'seccion' => $seccion ? $seccion->seccion : 'Sin sección', // Obtener sección real
-                'cargo' => $d->cargo,
-                'foto' => $d->foto_url ?? 'recursos/placeholder/persona.png',
-                'email' => $d->email ?? null,
-                'telefono' => $d->telefono ?? 'Sin teléfono',
-            ];
-        })->toArray();
+    // Leer datos del equipo institucional desde la base de datos
+    $personal = \App\Models\EquipoInstitucional::all()->map(function ($d) {
+      $seccion = \App\Models\Seccione::where('seccion', $d->seccion)->first();
+      return [
+        'id' => $d->id, // Agregar ID para edición
+        'nombres' => $d->nombre, // Cambiar 'nombre' a 'nombres'
+        'seccion' => $seccion ? $seccion->seccion : 'Sin sección', // Obtener sección real
+        'cargo' => $d->cargo,
+        'foto' => $d->foto_url ?? 'recursos/placeholder/persona.png',
+        'email' => $d->email ?? null,
+        'telefono' => $d->telefono ?? 'Sin teléfono',
+      ];
+    })->toArray();
 
-        // Estadísticas institucionales
-        $stats = [
-          // clave: etiqueta tal como se muestra en la vista
-          'Estudiantes' => 107,
-          'Directivos' => \App\Models\EquipoInstitucional::where('cargo', 'Directivo')->count(),
-          'Docentes' => \App\Models\EquipoInstitucional::where('cargo', 'Docente')->count(),
-          'Auxiliares de educación' => \App\Models\EquipoInstitucional::where('cargo', 'Auxiliar de educación')->count(),
-          'Administrativos' => \App\Models\EquipoInstitucional::where('cargo', 'Administrativo')->count(),
-        ];
+    // Estadísticas institucionales
+    $stats = [
+      // clave: etiqueta tal como se muestra en la vista
+      'Estudiantes' => 107,
+      'Directivos' => \App\Models\EquipoInstitucional::where('cargo', 'Directivo')->count(),
+      'Docentes' => \App\Models\EquipoInstitucional::where('cargo', 'Docente')->count(),
+      'Auxiliares de educación' => \App\Models\EquipoInstitucional::where('cargo', 'Auxiliar de educación')->count(),
+      'Administrativos' => \App\Models\EquipoInstitucional::where('cargo', 'Administrativo')->count(),
+    ];
 
-        return view('personal', compact('marca', 'personal', 'stats'));
-    }
+    return view('personal', compact('marca', 'personal', 'stats'));
+  }
 
   public function editarPersonal(Request $request, $id)
-{
+  {
     $personal = \App\Models\EquipoInstitucional::find($id);
 
     if (!$personal) {
-        return redirect()->back()->with('error', 'El personal no existe.');
+      return redirect()->back()->with('error', 'El personal no existe.');
     }
 
     $data = $request->validate([
-        'nombre' => 'required|string|max:255',
-        'seccion' => 'nullable|string|max:255',
-        'cargo' => 'required|string|max:255',
-        'foto_url' => 'nullable|string|max:255',
-        'email' => 'nullable|email|max:255',
-        'telefono' => 'nullable|string|max:20',
+      'nombre' => 'required|string|max:255',
+      'seccion' => 'nullable|string|max:255',
+      'cargo' => 'required|string|max:255',
+      'foto_url' => 'nullable|string|max:255',
+      'email' => 'nullable|email|max:255',
+      'telefono' => 'nullable|string|max:20',
     ]);
 
     $personal->update($data);
 
     return redirect()->route('personal')->with('success', 'Datos actualizados correctamente.');
-}
+  }
 
   public function secciones()
   {
@@ -179,17 +229,15 @@ class HomeController extends Controller
     foreach ($seccionesDB as $grado => $items) {
       $secciones[] = [
         'grado' => $grado,
-        'secciones' => $items->map(function($s){
+        'secciones' => $items->map(function ($s) {
           return [
             'nombre' => $s->seccion,
             'vacantes' => $s->vacantes,
-            'docente' => (function() use ($s) {
-                // Buscar un docente asignado a la sección
-                if (Schema::hasColumn('docentes', 'seccion')) {
-                    $t = \App\Models\Docente::where('seccion', $s->seccion)->first();
-                    if ($t) return $t->nombre . ' ' . $t->apellido;
-                }
-                return 'Docente no asignado';
+            'docente' => (function () use ($s) {
+              // Buscar un docente asignado a la sección
+              $t = Seccione::find($s->id)->docente;
+              if ($t) return $t->nombre;
+              return 'Docente no asignado';
             })(),
           ];
         })->values()->all(),
@@ -241,55 +289,111 @@ public function enviarContacto(Request $request) {
     return back()->with('status', 'Mensaje enviado. ¡Gracias por escribirnos!');
 }
 */
- public function programas()
-{
+  public function programas()
+  {
     $marca = $this->getMarca();
 
     // 14 competencias por áreas (títulos y descripciones breves)
     $competencias = [
-        // PERSONAL SOCIAL
-        ['area' => 'Personal Social', 'icon' => '🧒🏻', 'titulo' => 'Construye su identidad',
-         'desc' => 'Reconoce quién es, valora su nombre, gustos y cualidades; expresa sus emociones con respeto y va fortaleciendo su autoestima.'],
-        ['area' => 'Personal Social', 'icon' => '🤝', 'titulo' => 'Convive y participa democráticamente',
-         'desc' => 'Comparte, respeta turnos y acuerdos del aula, cuida los materiales comunes y aporta al bienestar del grupo.'],
-        ['area' => 'Personal Social', 'icon' => '✨', 'titulo' => 'Vive sus valores y dialoga sobre su experiencia de fe',
-         'desc' => 'Expresa con respeto sus creencias y aprende a dialogar con los demás, promoviendo el buen trato y la empatía.'],
+      // PERSONAL SOCIAL
+      [
+        'area' => 'Personal Social',
+        'icon' => '🧒🏻',
+        'titulo' => 'Construye su identidad',
+        'desc' => 'Reconoce quién es, valora su nombre, gustos y cualidades; expresa sus emociones con respeto y va fortaleciendo su autoestima.'
+      ],
+      [
+        'area' => 'Personal Social',
+        'icon' => '🤝',
+        'titulo' => 'Convive y participa democráticamente',
+        'desc' => 'Comparte, respeta turnos y acuerdos del aula, cuida los materiales comunes y aporta al bienestar del grupo.'
+      ],
+      [
+        'area' => 'Personal Social',
+        'icon' => '✨',
+        'titulo' => 'Vive sus valores y dialoga sobre su experiencia de fe',
+        'desc' => 'Expresa con respeto sus creencias y aprende a dialogar con los demás, promoviendo el buen trato y la empatía.'
+      ],
 
-        // PSICOMOTRIZ
-        ['area' => 'Psicomotriz', 'icon' => '🚶‍♀️', 'titulo' => 'Se desenvuelve de manera autónoma a través de su motricidad',
-         'desc' => 'Coordina movimientos gruesos y finos, explora espacios y objetos, y adopta posturas seguras en el juego.'],
+      // PSICOMOTRIZ
+      [
+        'area' => 'Psicomotriz',
+        'icon' => '🚶‍♀️',
+        'titulo' => 'Se desenvuelve de manera autónoma a través de su motricidad',
+        'desc' => 'Coordina movimientos gruesos y finos, explora espacios y objetos, y adopta posturas seguras en el juego.'
+      ],
 
-        // COMUNICACIÓN (lengua materna)
-        ['area' => 'Comunicación', 'icon' => '🗣️', 'titulo' => 'Se comunica oralmente en su lengua materna',
-         'desc' => 'Comprende y expresa ideas en conversaciones cotidianas, narra experiencias y escucha a los demás.'],
-        ['area' => 'Comunicación', 'icon' => '📖', 'titulo' => 'Lee diversos tipos de texto en su lengua materna',
-         'desc' => 'Explora cuentos, rimas y textos del entorno; reconoce portadas, imágenes y secuencias con ayuda.'],
-        ['area' => 'Comunicación', 'icon' => '✍️', 'titulo' => 'Escribe diversos tipos de texto en su lengua materna',
-         'desc' => 'Dibuja y grafica para comunicar ideas; avanza del garabateo a trazos convencionales con intención comunicativa.'],
-        ['area' => 'Comunicación - Arte', 'icon' => '🎨', 'titulo' => 'Crea proyectos desde los lenguajes del arte',
-         'desc' => 'Explora música, plástica y expresión corporal para representar emociones, historias y el entorno.'],
+      // COMUNICACIÓN (lengua materna)
+      [
+        'area' => 'Comunicación',
+        'icon' => '🗣️',
+        'titulo' => 'Se comunica oralmente en su lengua materna',
+        'desc' => 'Comprende y expresa ideas en conversaciones cotidianas, narra experiencias y escucha a los demás.'
+      ],
+      [
+        'area' => 'Comunicación',
+        'icon' => '📖',
+        'titulo' => 'Lee diversos tipos de texto en su lengua materna',
+        'desc' => 'Explora cuentos, rimas y textos del entorno; reconoce portadas, imágenes y secuencias con ayuda.'
+      ],
+      [
+        'area' => 'Comunicación',
+        'icon' => '✍️',
+        'titulo' => 'Escribe diversos tipos de texto en su lengua materna',
+        'desc' => 'Dibuja y grafica para comunicar ideas; avanza del garabateo a trazos convencionales con intención comunicativa.'
+      ],
+      [
+        'area' => 'Comunicación - Arte',
+        'icon' => '🎨',
+        'titulo' => 'Crea proyectos desde los lenguajes del arte',
+        'desc' => 'Explora música, plástica y expresión corporal para representar emociones, historias y el entorno.'
+      ],
 
-        // CASTELLANO COMO SEGUNDA LENGUA
-        ['area' => 'Castellano L2', 'icon' => '💬', 'titulo' => 'Se comunica oralmente en castellano como segunda lengua',
-         'desc' => 'Comprende y usa expresiones cotidianas en castellano, ampliando vocabulario en situaciones reales.'],
+      // CASTELLANO COMO SEGUNDA LENGUA
+      [
+        'area' => 'Castellano L2',
+        'icon' => '💬',
+        'titulo' => 'Se comunica oralmente en castellano como segunda lengua',
+        'desc' => 'Comprende y usa expresiones cotidianas en castellano, ampliando vocabulario en situaciones reales.'
+      ],
 
-        // MATEMÁTICA
-        ['area' => 'Matemática', 'icon' => '🔢', 'titulo' => 'Resuelve problemas de cantidad',
-         'desc' => 'Cuenta colecciones, compara y agrupa objetos; usa números en situaciones de juego y vida diaria.'],
-        ['area' => 'Matemática', 'icon' => '🧩', 'titulo' => 'Resuelve problemas de forma, movimiento y localización',
-         'desc' => 'Reconoce formas, posiciones y trayectorias; arma rompecabezas y sigue rutas sencillas.'],
+      // MATEMÁTICA
+      [
+        'area' => 'Matemática',
+        'icon' => '🔢',
+        'titulo' => 'Resuelve problemas de cantidad',
+        'desc' => 'Cuenta colecciones, compara y agrupa objetos; usa números en situaciones de juego y vida diaria.'
+      ],
+      [
+        'area' => 'Matemática',
+        'icon' => '🧩',
+        'titulo' => 'Resuelve problemas de forma, movimiento y localización',
+        'desc' => 'Reconoce formas, posiciones y trayectorias; arma rompecabezas y sigue rutas sencillas.'
+      ],
 
-        // CIENCIA Y TECNOLOGÍA
-        ['area' => 'Ciencia y Tecnología', 'icon' => '🔬', 'titulo' => 'Indaga mediante métodos científicos',
-         'desc' => 'Observa, formula preguntas, experimenta con materiales y comunica lo que descubre con apoyo del adulto.'],
+      // CIENCIA Y TECNOLOGÍA
+      [
+        'area' => 'Ciencia y Tecnología',
+        'icon' => '🔬',
+        'titulo' => 'Indaga mediante métodos científicos',
+        'desc' => 'Observa, formula preguntas, experimenta con materiales y comunica lo que descubre con apoyo del adulto.'
+      ],
 
-        // TRANSVERSALES
-        ['area' => 'Transversal', 'icon' => '💻', 'titulo' => 'Se desenvuelve en entornos virtuales generados por las TIC',
-         'desc' => 'Interactúa con recursos digitales sencillos para explorar, crear y reforzar aprendizajes con acompañamiento.'],
-        ['area' => 'Transversal', 'icon' => '🌱', 'titulo' => 'Gestiona su aprendizaje de manera autónoma',
-         'desc' => 'Planifica acciones simples, persevera ante retos y evalúa con apoyo lo que logró y lo que puede mejorar.'],
+      // TRANSVERSALES
+      [
+        'area' => 'Transversal',
+        'icon' => '💻',
+        'titulo' => 'Se desenvuelve en entornos virtuales generados por las TIC',
+        'desc' => 'Interactúa con recursos digitales sencillos para explorar, crear y reforzar aprendizajes con acompañamiento.'
+      ],
+      [
+        'area' => 'Transversal',
+        'icon' => '🌱',
+        'titulo' => 'Gestiona su aprendizaje de manera autónoma',
+        'desc' => 'Planifica acciones simples, persevera ante retos y evalúa con apoyo lo que logró y lo que puede mejorar.'
+      ],
     ];
 
     return view('programas', compact('marca', 'competencias'));
-}
+  }
 }

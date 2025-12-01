@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class EquipoInstitucional extends Model
 {
-    protected $table = 'equipo_institucional';
+    public $table = 'equipo_institucional';
 
-    protected $fillable = [
+    public $fillable = [
         'nombre',
         'cargo',
         'foto_url',
         'email',
+        'telefono',
+        'seccion',
     ];
 }

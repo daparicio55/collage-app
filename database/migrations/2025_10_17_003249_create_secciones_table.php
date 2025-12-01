@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('secciones', function (Blueprint $table) {
             $table->id();
-            $table->string('nivel');
             $table->string('grado');
             $table->string('seccion');
             $table->integer('vacantes');
-            $table->unique(['nivel','grado','seccion']);
+            $table->unique(['grado','seccion']);
             $table->timestamps();
         });
     }

@@ -16,4 +16,9 @@ class Docente extends Model
         'cargo',
         'seccion',
     ];
+
+    public function secciones()
+    {
+        return $this->hasMany(Seccione::class, 'docente_id');
+    }
 }

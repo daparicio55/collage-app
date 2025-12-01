@@ -21,20 +21,20 @@
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th>Nivel</th>
                             <th>Grado</th>
                             <th>Sección</th>
                             <th>Vacantes</th>
+                            <th>Docente</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         @forelse($secciones as $sec)
                             <tr>
-                                <td>{{ $sec->nivel }}</td>
                                 <td>{{ $sec->grado }}</td>
                                 <td>{{ $sec->seccion }}</td>
                                 <td>{{ $sec->vacantes }}</td>
+                                <td>{{ $sec->docente->nombre }}</td>
                                 <td>
                                     <div class="btn-group" role="group">
                                         <a href="{{ route('dashboard.secciones.edit', $sec) }}" class="btn btn-sm btn-primary">Editar</a>

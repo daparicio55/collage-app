@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\EquipoInstitucional;
 use App\Models\Seccione;
 use Illuminate\Http\Request;
 
@@ -10,13 +11,13 @@ class SeccioneController extends Controller
 {
     public function index()
     {
-        $secciones = Seccione::orderBy('nivel')->orderBy('grado')->paginate(15);
+        $secciones = Seccione::orderBy('grado')->paginate(15);
         return view('dashboard.secciones.index', compact('secciones'));
     }
 
     public function create()
     {
-        $docentes = \App\Models\EquipoInstitucional::select('id', 'nombre')
+        $docentes = EquipoInstitucional::select('id', 'nombre')
             ->whereIn('cargo', ['Docente', 'Directivo'])
             ->get();
         return view('dashboard.secciones.create', compact('docentes'));
@@ -24,8 +25,9 @@ class SeccioneController extends Controller
 
     public function store(Request $request)
     {
+        //dd($request->all());
         $validated = $request->validate([
-            'nivel' => 'required|string|max:50',
+            //'nivel' => 'required|string|max:50',
             'grado' => 'required|string|max:50',
             'seccion' => 'required|string|max:50',
             'vacantes' => 'required|integer|min:0',
@@ -39,16 +41,19 @@ class SeccioneController extends Controller
 
     public function edit(Seccione $seccione)
     {
-        return view('dashboard.secciones.edit', compact('seccione'));
+        $docentes = EquipoInstitucional::select('id', 'nombre')
+            ->whereIn('cargo', ['Docente', 'Directivo'])
+            ->get();
+        return view('dashboard.secciones.edit', compact('seccione', 'docentes'));
     }
 
     public function update(Request $request, Seccione $seccione)
     {
         $validated = $request->validate([
-            'nivel' => 'required|string|max:50',
             'grado' => 'required|string|max:50',
             'seccion' => 'required|string|max:50',
             'vacantes' => 'required|integer|min:0',
+            'docente_id' => 'required|exists:equipo_institucional,id',
         ]);
 
         $seccione->update($validated);
