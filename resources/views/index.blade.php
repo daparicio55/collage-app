@@ -176,7 +176,7 @@ $nos_cards = [
   src="https://www.google.com/maps?q=-6.23196,-77.86938&ll=-6.23196,-77.86938&z=15&output=embed"
   style="border:0;width:100%;height:340px" loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
-  title="Mapa - AA.HH. 16 de Octubre, Chachapoyas"></iframe>
+  title="Mapa - JR. AMAZONAS S/N, Chachapoyas"></iframe>
 
 <a class="btn" target="_blank" rel="noopener"
    href="https://www.google.com/maps/dir/?api=1&destination=-6.23196,-77.86938">
@@ -515,7 +515,7 @@ $nos_cards = [
 <footer>
   <div class="wrap foot">
     <div><strong><?= htmlspecialchars($marca['nombre']) ?></strong> • <?= htmlspecialchars($marca['eslogan']) ?></div>
-    <div>RUC 10430536431 · AA.HH. 16 de octubre, Chachapoyas – Perú</div>
+    <div>RUC 10430536431 · JR. AMAZONAS S/N, Chachapoyas – Perú</div>
     <div class="social"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">WhatsApp</a></div>
     <div class="copy">© <?= date('Y') ?> <?= htmlspecialchars($marca['nombre']) ?>. Todos los derechos reservados.</div>
   </div>

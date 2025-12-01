@@ -4,7 +4,7 @@
 <section class="page alt">
     <div class="wrap">
         <h1 class="hx">
-            Matrículas
+            Pre-Matrícula
         </h1>
         <p style="margin:10px 0">
             <a class="btn-ghost" href="{{ route('home.matriculas') }}">← Volver a Matrículas</a>

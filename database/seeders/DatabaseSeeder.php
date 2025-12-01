@@ -14,14 +14,15 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run(): void
-    {
-        User::created([
-            'name' => 'Administrador',
-            'email' => 'admin@gmail.com',
-            'password' => bcrypt('Pj12345678@')
-        ]);
-
+    {        
         $this->call(SeccioneSeed::class);
+        $this->call(DocenteSeeder::class);
+        User::create([
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('password')
+        ]);
     }
 
 }
+

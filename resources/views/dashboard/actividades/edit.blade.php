@@ -10,7 +10,7 @@
         <input type="date" id="fecha" name="fecha" class="form-control mb-3" value="{{ $actividade->fecha }}">
         <label for="descripcion">Descripción:</label>
         <textarea id="descripcion" name="descripcion" class="form-control mb-3">{{ $actividade->descripcion }}</textarea>
-        <button type="submit" class="btn btn-success">Actualizar Actividad</button>
+        <button type="submit" class="btn btn-primary">Actualizar Actividad</button>
     </form>
 
 @endsection

@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card border-0 shadow-sm rounded-3 h-100">
-                    <img src="{{ asset('recursos/nosotros-quienes.jpg') }}" alt="Imagen institucional"
+                    <img src="{{ asset('recursos/nosotros.jpg') }}" alt="Imagen institucional"
                          class="w-100 h-100 object-fit-cover rounded-3"
                          style="min-height: 230px;">
                 </div>
@@ -44,7 +44,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card border-0 shadow-sm rounded-3 h-100">
-                    <img src="{{ asset('recursos/nosotros-mision.jpg') }}" alt="Misión IEI 020"
+                    <img src="{{ asset('recursos/mision.jpg') }}" alt="Misión IEI 020"
                          class="w-100 h-100 object-fit-cover rounded-3"
                          style="min-height: 230px;">
                 </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card border-0 shadow-sm rounded-3 h-100">
-                    <img src="{{ asset('recursos/nosotros-vision.jpg') }}" alt="Visión institucional"
+                    <img src="{{ asset('recursos/vision.jpg') }}" alt="Visión institucional"
                          class="w-100 h-100 object-fit-cover rounded-3"
                          style="min-height: 230px;">
                 </div>
@@ -86,7 +86,7 @@
         <div class="col-lg-8">
             <div class="card border-0 shadow-sm rounded-3 h-100">
                 <div class="card-body">
-                    <span class="badge bg-success mb-2">Valor</span>
+                    <span class="badge bg-accent mb-2">Valor</span>
                     <h5 class="mb-2">Solidaridad</h5>
                     <p class="mb-3 small" style="text-align: justify;">
                         Es el valor que nos lleva a identificarnos con las necesidades entre los estudiantes, docentes y personal de la I.E., y comprometernos a propiciar el desarrollo del bienestar común, actuando con justicia e inclusión.
@@ -114,7 +114,7 @@
         <div class="col-lg-8">
             <div class="card border-0 shadow-sm rounded-3 h-100">
                 <div class="card-body">
-                    <span class="badge bg-success mb-2">Valor</span>
+                    <span class="badge bg-accent mb-2">Valor</span>
                     <h5 class="mb-2">Respeto</h5>
                     <p class="mb-3 small" style="text-align: justify;">
                         Es el valor que reconoce, comprende y valora los derechos y deberes, así como la dignidad de sí mismo y la de sus compañeros, fomentando la acogida y la estima de forma generosa y sincera, para lograr una convivencia armónica, justa y libre de violencia. 
@@ -128,7 +128,7 @@
         {{-- imagen --}}
         <div class="col-lg-4">
             <div class="card border-0 shadow-sm rounded-3 h-100">
-                <img src="{{ asset('recursos/valores/respeto.jpg') }}"
+                <img src="{{ asset('recursos/Respeto.jpg') }}"
                      alt="Respeto"
                      class="w-100 h-100"
                      style="object-fit: cover; min-height: 210px;">
@@ -142,7 +142,7 @@
         <div class="col-lg-8">
             <div class="card border-0 shadow-sm rounded-3 h-100">
                 <div class="card-body">
-                    <span class="badge bg-success mb-2">Valor</span>
+                    <span class="badge bg-accent mb-2">Valor</span>
                     <h5 class="mb-2">Responsabilidad</h5>
                     <p class="mb-3 small" style="text-align: justify;">
                         Es el valor que refleja el compromiso que uno asume al realizar las acciones que corresponden a su quehacer en beneficio de su autonomía y madurez, buscando el bien común. 
@@ -223,7 +223,7 @@
 
                             <div class="table-responsive">
                                 <table class="table table-sm table-bordered align-middle mb-0">
-                                    <thead class="table-success text-center">
+                                    <thead class="table-primary text-center">
                                         <tr>
                                             <th rowspan="2" style="vertical-align: middle;">Áreas</th>
                                             <th rowspan="2" style="vertical-align: middle;">Competencias</th>

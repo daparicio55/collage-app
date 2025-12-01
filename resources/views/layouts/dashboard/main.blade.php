@@ -375,11 +375,27 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                  <a class="nav-link d-flex align-items-center gap-2" href="{{ route('dashboard.noticias.index') }}">
                     <svg class="bi" aria-hidden="true">
                       <use xlink:href="#cart"></use>
                     </svg>
-                    Products
+                    Noticias
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="{{ route('dashboard.secciones.index') }}">
+                    <svg class="bi" aria-hidden="true">
+                      <use xlink:href="#file-earmark-text"></use>
+                    </svg>
+                    Secciones
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="{{ route('dashboard.docentes.index') }}">
+                    <svg class="bi" aria-hidden="true">
+                      <use xlink:href="#people"></use>
+                    </svg>
+                    Equipo institucional
                   </a>
                 </li>
                 <li class="nav-item">

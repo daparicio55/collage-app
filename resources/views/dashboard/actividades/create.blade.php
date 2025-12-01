@@ -9,7 +9,7 @@
         <input type="date" id="fecha" name="fecha" class="form-control mb-3">
         <label for="descripcion">Descripción:</label>
         <textarea id="descripcion" name="descripcion" class="form-control mb-3"></textarea>
-        <button type="submit" class="btn btn-success">Guardar Actividad</button>
+        <button type="submit" class="btn btn-primary">Guardar Actividad</button>
     </form>
 
 @endsection

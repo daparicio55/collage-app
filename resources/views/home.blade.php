@@ -63,6 +63,10 @@
 
   </div>
 </section>
+
+@include('noticias')
+
+
 <div id="calModal" aria-modal="true" role="dialog">
   <div class="modal-box">
     <div class="modal-head">
